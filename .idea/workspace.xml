@@ -5,30 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd5a8fd7-7ef2-4c18-a911-feb8a112ee61" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/AboutPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/BasePageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/BaseTestingUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/BenefitsPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/BrowserType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/CalendlyRequestDemoPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/FeaturesPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/HeaderPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/HeroContentPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/InsightsPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/LoginPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/NebulaPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/NebulaPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/RunAMatchPageObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/WebDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/nebula/example/NebulaPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/NebulaPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

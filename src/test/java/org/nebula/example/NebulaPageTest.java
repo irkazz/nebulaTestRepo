@@ -71,8 +71,4 @@ public class NebulaPageTest {
         }
     }
 
-
-    //TopNavigationTest
-    //LoginButtonTest
-    //RequestDemoTest
 }
