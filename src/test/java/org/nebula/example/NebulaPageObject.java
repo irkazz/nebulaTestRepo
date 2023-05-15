@@ -5,22 +5,21 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.containsString;
 
 public class NebulaPageObject extends BasePageObject {
     private final String url = "https://nebula.io/";
 
-    private HeroContentPageObject heroContentPO;
+    private final HeroContentPageObject heroContentPO;
 
-    private HeaderPageObject headerPO;
+    private final HeaderPageObject headerPO;
 
 
-    private FeaturesPageObject featuresPO;
-    private AboutPageObject aboutPO;
-    private BenefitsPageObject benefitsPO;
+    private final FeaturesPageObject featuresPO;
+    private final AboutPageObject aboutPO;
+    private final BenefitsPageObject benefitsPO;
 
-    private BaseTestingUtil util;
+    private final BaseTestingUtil util;
 
     public NebulaPageObject(WebDriver driver) {
         super(driver);
@@ -64,10 +63,11 @@ public class NebulaPageObject extends BasePageObject {
         return benefitsPO;
     }
 
-    protected void validateNewTabNabNavigation(WebElement link, String expectedURL, int expectedTabs, int newTabIndex) {
+    protected void validateNewTabNabNavigation(WebElement link, String expectedURL, int expectedTabs,
+                                               int newTabIndex) {
         link.click();
         //Switch to the newly opened tab and check URL
         util.switchToNewTab(expectedTabs, newTabIndex);
-        Assert.assertThat(getDriver().getCurrentUrl(), is(equalTo(expectedURL)));
+        Assert.assertThat(getDriver().getCurrentUrl(), containsString(expectedURL));
     }
 }

@@ -25,7 +25,7 @@ public class HeaderPageObject extends BasePageObject {
     private WebElement requestDemo;
 
 
-    @FindBy(css = "a.btn.btn-outline-primary")
+    @FindBy(css = "a.btn.btn-text.mx-0")
     private WebElement login;
 
 

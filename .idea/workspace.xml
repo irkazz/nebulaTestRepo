@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd5a8fd7-7ef2-4c18-a911-feb8a112ee61" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/nebula/example/HeaderPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/HeaderPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/nebula/example/HeroContentPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/HeroContentPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/nebula/example/LoginPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/LoginPageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/nebula/example/NebulaPageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/NebulaPageObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/nebula/example/NebulaPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/nebula/example/NebulaPageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +53,7 @@
       <recent name="org.nebula.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NebulaPageTest.loginTest">
+  <component name="RunManager" selected="JUnit.NebulaPageTest">
     <configuration name="NebulaPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Nebula" />
       <extension name="coverage">
@@ -130,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.NebulaPageTest.loginTest" />
         <item itemvalue="JUnit.NebulaPageTest" />
+        <item itemvalue="JUnit.NebulaPageTest.loginTest" />
         <item itemvalue="JUnit.NebulaPageTest.testTopNavigation" />
         <item itemvalue="JUnit.NebulaPageTest.LeftComponentTryItTest" />
         <item itemvalue="JUnit.NebulaPageTest.LeftComponentDemoTest" />
@@ -170,7 +175,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/org/nebula/example/HeroContentPageObject.java</url>
-          <line>47</line>
+          <line>44</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>

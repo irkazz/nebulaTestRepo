@@ -11,18 +11,8 @@ public class HeroContentPageObject {
     private final WebDriver driver;
 
     private final BaseTestingUtil util;
-
-    public WebElement getDemoButton() {
-        return demoButton;
-    }
-
-    public WebElement getTryItButton() {
-        return tryItButton;
-    }
-
     @FindBy(css = "div.hero__cta-wrap.sm-element.sm-element--d3.sm-visible>a:nth-child(1)")
     private WebElement demoButton;
-
     @FindBy(css = "div.hero__cta-wrap.sm-element.sm-element--d3.sm-visible>a:nth-child(2)")
     private WebElement tryItButton;
 
@@ -31,6 +21,13 @@ public class HeroContentPageObject {
         this.util = new BaseTestingUtil(driver);
     }
 
+    public WebElement getDemoButton() {
+        return demoButton;
+    }
+
+    public WebElement getTryItButton() {
+        return tryItButton;
+    }
 
     /**
      * Validate that left Demo button opens a new tab.
