@@ -1,18 +1,11 @@
 package org.nebula.example;
 
-<<<<<<< HEAD
-import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-
-import static org.hamcrest.Matchers.containsString;
-
-=======
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
->>>>>>> dev1
 public class NebulaPageObject extends BasePageObject {
     private final String url = "https://nebula.io/";
 
@@ -69,15 +62,6 @@ public class NebulaPageObject extends BasePageObject {
         return benefitsPO;
     }
 
-<<<<<<< HEAD
-    protected void validateNewTabNabNavigation(WebElement link, String expectedURL, int expectedTabs,
-                                               int newTabIndex) {
-        link.click();
-        //Switch to the newly opened tab and check URL
-        util.switchToNewTab(expectedTabs, newTabIndex);
-        Assert.assertThat(getDriver().getCurrentUrl(), containsString(expectedURL));
-    }
-=======
     /****************************************************************
      *************************** test helpers ***********************
      ****************************************************************/
