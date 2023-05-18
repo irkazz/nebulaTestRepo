@@ -24,8 +24,7 @@ public class NebulaPageTest {
      */
     @Test
     public void LeftComponentDemoTest() {
-        npo.validateNewTabNabNavigation(npo.getHeroContentPO().getDemoButton(),
-                CalendlyRequestDemoPageObject.getBaseUrl(), 2, 1);
+        npo.validateLeftDemoButton();
     }
 
     /**
@@ -33,8 +32,7 @@ public class NebulaPageTest {
      */
     @Test
     public void LeftComponentTryItTest() {
-        npo.validateNewTabNabNavigation(npo.getHeroContentPO().getTryItButton(),
-                RunAMatchPageObject.getBaseUrl(), 2, 1);
+        npo.validateTryItButton();
     }
 
 
@@ -48,20 +46,7 @@ public class NebulaPageTest {
      */
     @Test
     public void topNavigationTest() {
-        npo.getHeaderPO().validateMenuItemOpensSamePage(
-                npo.getHeaderPO().getFeaturesItem(),
-                npo.getFeaturesPO().getDivFeatures(),
-                "active");
-        npo.getHeaderPO().validateMenuItemOpensSamePage(
-                npo.getHeaderPO().getBenefitsItem(),
-                npo.getBenefitsPO().getBenefitsHeader(),
-                "sm-visible");
-        npo.getHeaderPO().validateMenuItemOpensSamePage(
-                npo.getHeaderPO().getAboutItem(),
-                npo.getAboutPO().getLeadershipTeamHeader(),
-                "sm-visible");
-        npo.validateNewTabNabNavigation(npo.getHeaderPO().getInsightsItem(),
-                InsightsPageObject.getBaseUrl(), 1, 0);
+        npo.validateTopNavigation();
     }
 
     /**
@@ -69,8 +54,7 @@ public class NebulaPageTest {
      */
     @Test
     public void headerRequestDemoTest() {
-        npo.validateNewTabNabNavigation(npo.getHeaderPO().getRequestDemo(),
-                CalendlyRequestDemoPageObject.getBaseUrl(), 2, 1);
+        npo.validateHeaderRequestDemo();
     }
 
     /**
@@ -78,8 +62,7 @@ public class NebulaPageTest {
      */
     @Test
     public void loginTest() {
-        npo.validateNewTabNabNavigation(npo.getHeaderPO().getLogin(),
-                LoginPageObject.getBaseUrl(), 2, 1);
+        npo.validateLogin();
     }
 
     /**

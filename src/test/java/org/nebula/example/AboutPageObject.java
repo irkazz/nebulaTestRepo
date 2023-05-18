@@ -5,15 +5,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class AboutPageObject extends BasePageObject {
-    @FindBy(css = "div#about>div>h2")
+    @FindBy(css = "div#about>div>h2.sm-visible")
+
     private WebElement leadershipTeamHeader;
 
     public AboutPageObject(WebDriver driver) {
         super(driver);
     }
 
-    public WebElement getLeadershipTeamHeader() {
-        return leadershipTeamHeader;
+
+    public void validateItemActive() {
+        validateItemActive(leadershipTeamHeader);
     }
 
 }

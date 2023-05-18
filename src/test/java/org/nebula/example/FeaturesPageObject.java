@@ -6,16 +6,16 @@ import org.openqa.selenium.support.FindBy;
 
 public class FeaturesPageObject extends BasePageObject {
 
-    @FindBy(css = "div#features>div.fixed-nav__positioning")
+
+    @FindBy(css = "div#features>div.fixed-nav__positioning.active")
     private WebElement divFeatures;
 
     public FeaturesPageObject(WebDriver driver) {
         super(driver);
     }
 
-    public WebElement getDivFeatures() {
-        return divFeatures;
+    public void validateItemActive() {
+        validateItemActive(divFeatures);
     }
-
 
 }
