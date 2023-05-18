@@ -96,6 +96,4 @@ public class NebulaPageObject extends BasePageObject {
         headerPO.clickRequestDemo();
         validateNewTabNabNavigation(CalendlyRequestDemoPageObject.getBaseUrl(), 2, 1);
     }
-
->>>>>>> dev1
 }
