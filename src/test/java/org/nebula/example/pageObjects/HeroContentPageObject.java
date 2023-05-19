@@ -1,10 +1,13 @@
-package org.nebula.example;
+package org.nebula.example.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-
+/**
+ * HeroContent section of nebula.io home page
+ * @author isendyk
+ */
 public class HeroContentPageObject extends BasePageObject {
     @FindBy(css = "div.hero__cta-wrap.sm-element.sm-element--d3.sm-visible>a:nth-child(1)")
     private WebElement demoButton;

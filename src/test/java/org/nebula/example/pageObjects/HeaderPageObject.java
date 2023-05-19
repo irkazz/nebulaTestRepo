@@ -1,9 +1,13 @@
-package org.nebula.example;
+package org.nebula.example.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+/**
+ * Header section of nebula.io home page
+ * @author isendyk
+ */
 public class HeaderPageObject extends BasePageObject {
     private FeaturesPageObject featurePO;
 

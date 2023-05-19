@@ -1,9 +1,12 @@
-package org.nebula.example;
+package org.nebula.example.utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
+/**
+ * WebDriverFactory create web driver based on Browser type
+ * @author isendyk
+ */
 public class WebDriverFactory {
     WebDriver driver;
 
