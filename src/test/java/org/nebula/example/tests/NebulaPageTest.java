@@ -1,10 +1,18 @@
-package org.nebula.example;
+package org.nebula.example.tests;
 
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import org.nebula.example.pageObjects.*;
+import org.nebula.example.utils.BrowserType;
+import org.nebula.example.utils.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 
+/**
+ * nebula.io home page tests
+ * @author isendyk
+ */
 public class NebulaPageTest {
     WebDriverFactory fact = new WebDriverFactory();
     NebulaPageObject npo;
@@ -24,7 +32,8 @@ public class NebulaPageTest {
      */
     @Test
     public void LeftComponentDemoTest() {
-        npo.validateLeftDemoButton();
+        npo.getHeroContentPO().clickDemoButton();
+        npo.getUtil().validateNewTabNabNavigation(CalendlyRequestDemoPageObject.getBaseUrl(), 2, 1);
     }
 
     /**
@@ -32,7 +41,8 @@ public class NebulaPageTest {
      */
     @Test
     public void LeftComponentTryItTest() {
-        npo.validateTryItButton();
+        npo.getHeroContentPO().clickTryItButton();
+        npo.getUtil().validateNewTabNabNavigation(RunAMatchPageObject.getBaseUrl(), 2, 1);
     }
 
 
@@ -46,7 +56,14 @@ public class NebulaPageTest {
      */
     @Test
     public void topNavigationTest() {
-        npo.validateTopNavigation();
+        npo.getHeaderPO().clickFeaturesItem();
+        Assert.assertTrue("Features section not visible", npo.getFeaturesPO().isPageVisible());
+        npo.getHeaderPO().clickBenefitsItem();
+        Assert.assertTrue("Benefits section not visible", npo.getBenefitsPO().isPageVisible());
+        npo.getHeaderPO().clickAboutItem();
+        Assert.assertTrue("Benefits section not visible", npo.getAboutPO().isPageVisible());
+        npo.getHeaderPO().clickInsightsItem();
+        npo.getUtil().validateNewTabNabNavigation(InsightsPageObject.getBaseUrl(), 1, 0);
     }
 
     /**
@@ -54,7 +71,8 @@ public class NebulaPageTest {
      */
     @Test
     public void headerRequestDemoTest() {
-        npo.validateHeaderRequestDemo();
+        npo.getHeaderPO().clickRequestDemo();
+        npo.getUtil().validateNewTabNabNavigation(CalendlyRequestDemoPageObject.getBaseUrl(), 2, 1);
     }
 
     /**
@@ -62,7 +80,8 @@ public class NebulaPageTest {
      */
     @Test
     public void loginTest() {
-        npo.validateLogin();
+        npo.getHeaderPO().clickLogin();
+        npo.getUtil().validateNewTabNabNavigation(LoginPageObject.getBaseUrl(), 2, 1);
     }
 
     /**
